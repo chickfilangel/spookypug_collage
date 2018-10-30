@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angel's Collage</title>
+
+	<style type="text/css">
+
+		* {
+			box-sizing: border-box;
+		}
+		html, body {
+			margin:0;
+			padding:0;
+		}
+		
+		.container {
+		background:orange;
+		display: grid;
+		height: 100vh;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 2fr 1fr 1fr 2fr;
+		grid-template-areas:
+		"photo1 photo2"
+		"photo1 photo3"
+		"photo4 photo3"
+		"photo4 photo5";
+		grid-gap: 10px;
+		padding: 10px;
+		}
+
+		.item {
+			background-color: black;
+			min-height: 100px;
+			min-width: 10px;}
+
+		#photo1 {grid-area:photo1;
+		background:url(http://www.pugnow.com/wp-content/uploads/2016/03/pug-king.jpg);
+		background-size: cover;
+		background-position: center;
+		}
+		#photo2 {grid-area:photo2;
+			background:url(https://static1.squarespace.com/static/594974c0e58c62484cbd42f9/59de5e6d197aeae3ec5bf035/59de5f6549fc2b6bb0499b3e/1507745675241/dc360649a4fda81a282e410cae8f5635.png);
+			background-size: cover;
+		}
+		#photo3 {grid-area: photo3;
+			background:url(https://i2-prod.manchestereveningnews.co.uk/incoming/article13676865.ece/ALTERNATES/s615/22054237_10155950250300676_2018937942_n.jpg);
+			background-size: cover;
+			background-position: center;
+		}	
+		#photo4 {grid-area: photo4;
+			background:url(https://cdn.newsday.com/polopoly_fs/1.11007278.1445948189!/httpImage/image.jpg_gen/derivatives/display_960/image.jpg);
+			background-size: cover;
+		}	
+		#photo5 {grid-area: photo5;
+			background:url(https://mypugnation.com/wp-content/uploads/2016/10/Photos-From-The-Best-Halloween-Party-Just-For-Pugs-banana-split-costume.jpg);
+			background-size: cover;
+			background-position: center;
+
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+
+	<div class="item" id="photo1"></div>
+
+	<div class="item" id="photo2"></div>
+
+	<div class="item" id="photo3"></div>
+
+	<div class="item" id="photo4"></div>
+
+	<div class="item" id="photo5"></div>
+
+</body>
+</html>
